@@ -10,7 +10,7 @@ const navLinks = [
 ---
 
 <header
-  class="w-full flex h-[100px] bg-primary px-[50px] items-center justify-between"
+  class="w-full flex h-[80px] bg-primary px-[50px] items-center justify-between"
 >
   <span class="text-white font-semibold text-lg tracking-tighter"
     >Gonzpads.</span
@@ -18,7 +18,7 @@ const navLinks = [
   <nav class="flex gap-5">
     {
       navLinks.map((link) => (
-        <a class="text-white text-sm font-thin" href={link.url}>
+        <a class="text-white text-base font-thin" href={link.url}>
           {link.name}
         </a>
       ))
