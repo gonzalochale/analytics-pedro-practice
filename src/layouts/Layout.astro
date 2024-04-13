@@ -2,8 +2,9 @@
 interface Props {
   title: string;
 }
-
 const { title } = Astro.props;
+// Supports weights 100-900
+import "@fontsource-variable/montserrat";
 ---
 
 <!doctype html>
@@ -20,3 +21,9 @@ const { title } = Astro.props;
     <slot />
   </body>
 </html>
+
+<style>
+  body {
+    font-family: "Montserrat Variable", sans-serif;
+  }
+</style>
