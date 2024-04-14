@@ -1,0 +1,57 @@
+---
+const navLinks = [
+  { name: "Home", url: "#" },
+  { name: "Company", url: "#" },
+  { name: "Blog", url: "#" },
+  { name: "Princing", url: "#" },
+  { name: "Pages", url: "#" },
+];
+---
+
+<header
+  class="bg-[697586] opacity-70 flex w-full px-[50px] items-center justify-between h-[82px]"
+>
+  <img
+    class="max-lg:hidden"
+    src="/assets/logo.png"
+    alt="Financio-Logo"
+    title="Financo-Enterprises."
+  />
+  <!-- navigation section -->
+  <nav class="max-lg:hidden">
+    <ul class="flex gap-4">
+      {
+        navLinks.map((link) => (
+          <li>
+            <a
+              class="text-[#697586] hover:text-black  font-light transition-all duration-300 ease-in-out"
+              href={link.url}
+            >
+              {" "}
+              {link.name}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </nav>
+  <button class="lg:hidden"
+    ><svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke-width="1.5"
+      stroke="currentColor"
+      class="w-6 h-6"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
+    </svg>
+  </button>
+  <button
+    class="bg-[#202939] text-white text-xs w-[131px] h-[40px] rounded-[32px] hover:text-black hover:bg-white hover:border hover:border-black transition-all duration-300 ease-in-out"
+    >Get Started</button
+  >
+</header>
