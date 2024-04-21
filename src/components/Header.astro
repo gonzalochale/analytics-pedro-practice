@@ -9,8 +9,7 @@ const navLinks = [
 ---
 
 <header
-  class="bg-[697586] opacity-70 flex w-full px-[50px] items-center justify-between h-[82px]"
->
+  class="bg-[#EEF2F6]  flex w-full px-[50px] items-center justify-between h-[82px]">
   <img
     class="max-lg:hidden"
     src="/assets/logo.png"
@@ -23,13 +22,9 @@ const navLinks = [
       {
         navLinks.map((link) => (
           <li>
-            <a
-              class="text-[#697586] hover:text-black  font-light transition-all duration-300 ease-in-out"
-              href={link.url}
+            <a class="text-[#697586] hover:text-black  font-light transition-all duration-300 ease-in-out"href={link.url}
             >
-              {" "}
-              {link.name}
-            </a>
+{link.name}</a>
           </li>
         ))
       }
@@ -52,6 +47,5 @@ const navLinks = [
   </button>
   <button
     class="bg-[#202939] text-white text-xs w-[131px] h-[40px] rounded-[32px] hover:text-black hover:bg-white hover:border hover:border-black transition-all duration-300 ease-in-out"
-    >Get Started</button
-  >
+    >Get Started</button>
 </header>
